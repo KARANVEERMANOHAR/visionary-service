@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.nav-item {
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.features-container{
+  background-color: black;
+  width: 100%;
+  height: 1100px;
   display: flex;
   flex-direction: column;
+}
+
+.container-heading{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 90px;
+}
+
+.container-heading > h1{
   color: white;
+  text-align: center;
+  font-family: ProximaNova,Arial,Sans-serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.feature-tiles{
+  width: 60%;
+  height: 400px;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tile-container{
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tile{
+  background: linear-gradient(125deg,#05f7b4 0,#01827f 100%);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+
+.tile-image{
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+}
+.tile-text{
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.whyToBuy-container{
+  background: linear-gradient(-55deg,#58cecb,#04dda8);
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whyToBuy-main-heading{
+  display: flex;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.heading-container > h1{
+  color: white;
+  font-family: ProximaNova,Arial,Sans-serif;
+  margin: auto;
+  text-align: center;
+  
+  
+}
+.whyToBuy-main-heading > p{
+  color: white;
+  
+}
+
+.feature-list{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 600px;
+  color: white;
+  margin: auto;
+  justify-content: space-evenly;
+  font-size: large;
 }
